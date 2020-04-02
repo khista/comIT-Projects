@@ -15,8 +15,8 @@
     app.use(express.static('public'));
 
 //body-parser services
-var urlencodedParser = (bodyParser.urlencoded({ extended: false }))
-//app.use(bodyParser.urlencoded({ extended: false }));
+//var urlencodedParser = (bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //all gets required path
     const homePage = require('./route/home');
@@ -70,7 +70,7 @@ const adminPostWireless = require('./route/admin/post/postWireless');
     app.get('/onlineSuport',adminOnlines);
 
 //admin routes for post
-    app.post('/admin/getWirelessForm',urlencodedParser,adminPostWireless);
+    app.post('/admin/getWirelessForm',adminPostWireless);
 
 //Server listening and on port 
     app.listen(port,function(errr){

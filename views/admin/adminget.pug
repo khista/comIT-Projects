@@ -1,0 +1,163 @@
+extends ../layout.pug
+block content
+    div.product_subMenu(style="width:90%; height:50px;margin:30px 0px 0px 5%; padding:10px 0px 0px 10px; float:left; height:100%;")
+        nav
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px 0px 0px 30px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") views
+                    div(class="first-div" style="background:yellow; width:1000px; height:500px; margin:-28px 0px 0px 152px; padding-top:5px; ")
+                        div(class="first-div" style="background:yellow; width:98%; margin:20px 0px 0px 10px; border:1px solid black;") Products
+                                each wan in wirless
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")
+                                        p=wan.name
+                                        p=wan.description 
+                                        p=wan.power  
+                                        p=wan.Frequincy
+                                        p=wan.price
+                                        p=wan.image  
+
+                                each network in lan
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=network.name
+                                        p=network.description 
+                                        p=network.power  
+                                        p=network.Frequincy
+                                        p=network.price
+                                        p=network.image  
+                                each accessor in accessory   
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;") 
+                                        p=accessor.name
+                                        p=accessor.description 
+                                        p=accessor.power  
+                                        p=accessor.Frequincy
+                                        p=accessor.price
+                                        p=accessor.image  
+                                each computers in computer
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=computers.name
+                                        p=computers.description 
+                                        p=computers.power  
+                                        p=computers.Frequincy
+                                        p=computers.price
+                                        p=computers.image 
+
+                        div(class="first-div" style="background:yellow; width:98%; margin:10px 0px 0px 10px; border:1px solid black;") Services
+                                each installation in installService
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")
+                                        p=installation.name
+                                        p=installation.description 
+                                        p=installation.power  
+                                        p=installation.Frequincy
+                                        p=installation.price
+                                        p=installation.image  
+
+                                each configure in configuration
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=configure.name
+                                        p=configure.description 
+                                        p=configure.power  
+                                        p=configure.Frequincy
+                                        p=configure.price
+                                        p=configure.image  
+                                each accessor in internet  
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;") 
+                                        p=accessor.name
+                                        p=accessor.description 
+                                        p=accessor.power  
+                                        p=accessor.Frequincy
+                                        p=accessor.price
+                                        p=accessor.image  
+                                each websits in websit
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=websits.name
+                                        p=websits.description 
+                                        p=websits.power  
+                                        p=websits.Frequincy
+                                        p=websits.price
+                                        p=websits.image  
+                                each solution in solutions
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=solution.name
+                                        p=solution.description 
+                                        p=solution.power  
+                                        p=solution.Frequincy
+                                        p=solution.price
+                                        p=solution.image  
+                        div(class="first-div" style="background:yellow; width:98%; margin:10px 0px 0px 10px; border:1px solid black;") Supports
+                                each downl in download
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")
+                                        p=downl.name
+                                        p=downl.description 
+                                        p=downl.power  
+                                        p=downl.Frequincy
+                                        p=downl.price
+                                        p=downl.image  
+
+                                each train in  training
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=train.name
+                                        p=train.description 
+                                        p=train.power  
+                                        p=train.Frequincy
+                                        p=train.price
+                                        p=train.image  
+                                each survey in fieldSurveys  
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;") 
+                                        p=survey.name
+                                        p=survey.description 
+                                        p=survey.power  
+                                        p=survey.Frequincy
+                                        p=survey.price
+                                        p=survey.image  
+                                each resource in  resources
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=resource.name
+                                        p=resource.description 
+                                        p=resource.power  
+                                        p=resource.Frequincy
+                                        p=resource.price
+                                        p=resource.image  
+                                each online in onliness
+                                    div(class="first-div" id="viewsItems" style="background:yellow; width:98%; margin:0px 0px 0px 10px;")  
+                                        p=online.name
+                                        p=online.description 
+                                        p=online.power  
+                                        p=online.Frequincy
+                                        p=online.price
+                                        p=online.image  
+                                
+                         
+                        
+
+    div.product_subMenu(style="width:90%; height:50px; margin:0px 0px 0px 5%; padding:10px 0px 0px 10px; float:left;height:100%;")
+        nav
+            li(class="first-li" id="createItemMenu" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:5px 0px 0px 30px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Post Items
+                    nav
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="getWirelessForm" style="color:black; font-weight:600;  text-decoration: none;") Add Wireless
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="getLanSwitchForm" style="color:black; font-weight:600;  text-decoration: none;") LAN Switches
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="accessoriessForm" style="color:black; font-weight:600;  text-decoration: none;") Accessories
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="computerForm" style="color:black; font-weight:600;  text-decoration: none;") Computers
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="installationForm" style="color:black; font-weight:600;  text-decoration: none;") Installation
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="configForm" style="color:black; font-weight:600;  text-decoration: none;") Configuration
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="internetForm" style="color:black; font-weight:600;  text-decoration: none;") Internet
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="websiteForm" style="color:black; font-weight:600;  text-decoration: none;") Web Site
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="solutionsForm" style="color:black; font-weight:600;  text-decoration: none;") Solutions
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="downloadForm" style="color:black; font-weight:600;  text-decoration: none;") Downloads
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="TrainingForm" style="color:black; font-weight:600;  text-decoration: none;") Trainings
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="FeildSurveyForm" style="color:black; font-weight:600;  text-decoration: none;") Field Survey
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="resourcesForm" style="color:black; font-weight:600;  text-decoration: none;") Resources
+                        li(class="createItemMenu1" style=" width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin: 1px 0px 0px 140px; padding:3px 0px 0px 10px; font-size:16px;")
+                            a(href="onlineSuport" style="color:black; font-weight:600;  text-decoration: none;") 24/7 Online 

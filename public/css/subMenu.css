@@ -1,0 +1,56 @@
+ 
+.first-div{
+
+    display: none;
+}
+
+.first-li:hover .first-div{
+    display: block;
+
+}
+.first-li:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   
+}
+
+.form-group1 input{
+    width:450px;
+
+    
+}
+.form-group1 label{
+    width:150px;
+    
+}
+.form-group1 input,label{
+    margin: 10px;
+    float: left;
+}
+
+
+#viewsItems{
+    float: left;
+}
+
+.createItemMenu1{
+    display:none;
+}
+#createItemMenu:hover .createItemMenu1{
+    display: block;
+    
+}
+.createItemMenu1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* .dropDownField1{
+    display: none;
+}
+
+
+.li-1:hover .dropDownField1{
+display: block;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+background: rgba(246, 104, 16, 0.956);
+}
+
+  */

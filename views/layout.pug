@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title=title
+        link(href='https://fonts.googleapis.com/css?family=Great+Vibes&display=swap', rel='stylesheet')
+        link(rel="stylesheet", href="/css/styles.css")
+        link(rel="stylesheet", href="/css/subMenu.css")
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+        script(src="/js/script.js")
+    body
+        div(class="mainMenu")
+            nav.navbar.navbar-inverse
+                .container-fluid
+                    .navbar-header
+                        a.navbar-brand(href='/') Network Equipment 
+                    form.navbar-form.navbar-left(action='https://www.google.com/search' method='GET')
+                        a(href="./admin") Admin login
+                        .form-group
+                            input.form-control(type='text', placeholder='Search' name="q")
+                            button.btn.btn-default(type='Submit' value="Google Search") Submit
+block content

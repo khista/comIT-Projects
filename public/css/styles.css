@@ -1,0 +1,98 @@
+body{
+    min-width: 770px;
+    background-image:linear-gradient( to right, #93a5cf , #e4efe9);
+    height: 100%;
+   
+}
+.mainMenu{
+    width:100%; 
+    height:70px; 
+    background:#000000;
+}
+.btn.btn-default{
+    width: 90px;
+    margin-left: 5px;
+    color:white ;
+    border: 1px solid white;
+}
+.navbar-form.navbar-left{
+   width:550px;
+   margin-top: 10px;
+   font-style: normal;
+}
+.navbar-form.navbar-left a{
+  float: left;
+  width: 100px;
+  color: azure;
+  font-size: 1em;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar-form.navbar-left a:hover{
+  box-shadow: 0 10px 5px 0 rgba(229, 218, 218, 0.2), -10px 20px 5px 0 rgba(139, 82, 82, 0.19);
+}
+.navbar-form.navbar-left input{
+    width: 50%;
+    float: left;
+    display: block;
+}
+.navbar-brand{
+    color:antiquewhite;
+    font-family: 'Great Vibes', cursive;
+    
+}
+
+.button {
+    
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00000018;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 40%;
+    height: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background:rgba(246, 104, 16, 0.956);
+  }
+  .button a{
+    font-weight: 800;
+    color:rgb(4, 7, 61);
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    opacity: 1;
+    right: 0;
+  }

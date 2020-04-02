@@ -1,0 +1,71 @@
+extends ./layout.pug 
+block content
+    div.product_subMenu(style="width:90%; height:50px;margin:30px 0px 0px 5%; padding:10px 0px 0px 10px; float:left;height:100%;")
+        nav
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Downloads
+                    div(class="first-div" style="background:yellow; width:1000px; height:500px; margin:-28px 0px 0px 152px; ")
+                        each downlo in download
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=downlo.image alt=downlo.name)
+                                .card-body
+                                    h5.card-title="downlo.name"
+                                    p.card-text="downlo.description"
+                                    p.card-text="downlo.friquincy"
+                                    p.card-text="downlo.power"
+                                    p.card-text Price: $#{"downlo.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600; text-decoration: none;") Trainings 
+                    div(class="first-div" style="background:brown; width:1000px; height:500px; margin:-73px 0px 0px 152px; ")
+                         each Train in training
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=Train.image alt=Train.name)
+                                .card-body
+                                    h5.card-title="Train.name"
+                                    p.card-text="Train.description"
+                                    p.card-text="Train.friquincy"
+                                    p.card-text="Train.power"
+                                    p.card-text Price: $#{"Train.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600; text-decoration: none;") Field Survey
+                    div(class="first-div" style="background:gray; width:1000px; height:500px; margin:-118px 0px 0px 152px; ")
+                        each survey in fieldSurveys
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=survey.image alt=survey.name)
+                                .card-body
+                                    h5.card-title="survey.name"
+                                    p.card-text="survey.description"
+                                    p.card-text="survey.friquincy"
+                                    p.card-text="survey.power"
+                                    p.card-text Price: $#{"survey.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600; text-decoration: none;") Resource
+                    div(class="first-div" style="background:green; width:1000px; height:500px; margin:-163px 0px 0px 152px; ")
+                        each resours in resources
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=resours.image alt=resours.name)
+                                .card-body
+                                    h5.card-title="resours.name"
+                                    p.card-text="resours.description"
+                                    p.card-text="resours.friquincy"
+                                    p.card-text="resours.power"
+                                    p.card-text Price: $#{"resours.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600; text-decoration: none;") 24/7 Online
+                    div(class="first-div" style="background:blue; width:1000px; height:500px; margin:-208px 0px 0px 152px; ")
+                        each online in onliness
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=online.image alt=online.name)
+                                .card-body
+                                    h5.card-title="online.name"
+                                    p.card-text="online.description"
+                                    p.card-text="online.friquincy"
+                                    p.card-text="online.power"
+                                    p.card-text Price: $#{"online.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere

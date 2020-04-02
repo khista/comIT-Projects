@@ -1,0 +1,72 @@
+extends ./layout.pug
+block content
+     div.product_subMenu(style="width:90%; height:50px;margin:30px 0px 0px 5%; padding:10px 0px 0px 10px; float:left;height:100%;")
+        nav
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Installation
+                    div(class="first-div" style="background:yellow; width:1000px; height:500px; margin:-28px 0px 0px 152px; ")
+                        each service in installService
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=service.image alt=service.name)
+                                .card-body
+                                    h5.card-title="service.name"
+                                    p.card-text="service.description"
+                                    p.card-text="service.friquincy"
+                                    p.card-text="service.power"
+                                    p.card-text Price: $#{"service.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Configure
+                    div(class="first-div" style="background:green; width:1000px; height:500px; margin:-73px 0px 0px 152px;  ")
+                         each config in configuration
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=config.image alt=config.name)
+                                .card-body
+                                    h5.card-title="config.name"
+                                    p.card-text="config.description"
+                                    p.card-text="config.friquincy"
+                                    p.card-text="config.power"
+                                    p.card-text Price: $#{"config.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Internet
+                    div(class="first-div" style="background:gray; width:1000px; height:500px; margin:-118px 0px 0px 152px; ")
+                        each bandwdith in internet
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=bandwdith.image alt=bandwdith.name)
+                                .card-body
+                                    h5.card-title="bandwdith.name"
+                                    p.card-text="bandwdith.description"
+                                    p.card-text="bandwdith.friquincy"
+                                    p.card-text="bandwdith.power"
+                                    p.card-text Price: $#{"bandwdith.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Web Site
+                    div(class="first-div" style="background:red; width:1000px; height:500px; margin:-163px 0px 0px 152px; ")
+                        each web in websit
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=web.image alt=web.name)
+                                .card-body
+                                    h5.card-title="web.name"
+                                    p.card-text="web.description"
+                                    p.card-text="web.friquincy"
+                                    p.card-text="web.power"
+                                    p.card-text Price: $#{"web.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:150px; height:30px; background: rgba(246, 104, 16, 0.956); list-style:circle; margin:15px; font-size:20px; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Solution
+                    div(class="first-div" style="background:blue; width:1000px; height:500px; margin:-208px 0px 0px 152px; ")
+                        each changes in solutions
+                            .card(style='width: 18rem;')
+                                img.card-img-top(src=changes.image alt=changes.name)
+                                .card-body
+                                    h5.card-title="changes.name"
+                                    p.card-text="changes.description"
+                                    p.card-text="changes.friquincy"
+                                    p.card-text="changes.power"
+                                    p.card-text Price: $#{"changes.price"}
+                                    a.btn.btn-primary(href='#') Go somewhere

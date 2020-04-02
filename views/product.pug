@@ -1,0 +1,60 @@
+extends ./layout.pug  
+block content 
+    div.product_subMenu(style="width:92%; height:50px;margin:30px 0px 0px 5%; padding:10px 0px 0px 10px; float:left;height:100%;")
+        nav
+            li(class="first-li" style="width:24%; height:30px; background: rgba(246, 104, 16, 0.956); margin-right:5px; list-style:circle; font-size:20px; float:left; ")
+                a( href ="#" style="color:black; text-decoration: none;") Wireless
+                   div(class="first-div" style="background:yellow; width:1240px; ")
+                        each wan in wirless
+                            .card(style='width: 25%; height:300px; margin:1px 0px 0px auto; float:left;')
+                                img.card-img-top(src=wan.image alt=wan.name)
+                                .card-body
+                                    h5.card-title=wan.name
+                                    p.card-text=wan.description
+                                    p.card-text=wan.friquincy
+                                    p.card-text=wan.power
+                                    p.card-text Price: $#{wan.price}
+                                    a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:23%; height:30px; background: rgba(246, 104, 16, 0.956); margin-right:5px; list-style:circle; font-size:20px; float:left; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") LAN Switches
+                   div(class="first-div" style="background:yellow; width:1230px; margin:10px 0px 10px -5px;")
+                        each local in lan
+                                .card(style='width: 24%; height:300px; margin:1px auto 0px auto; float:left;')
+                                    img.card-img-top(src=local.image alt=local.name)
+                                    .card-body
+                                        h5.card-title="local.name"
+                                        p.card-text="local.description"
+                                        p.card-text="local.friquincy"
+                                        p.card-text="local.power"
+                                        p.card-text Price: $#{"local.price"}
+                                        a.btn.btn-primary(href='#') Go somewhere
+
+            li(class="first-li" style="width:23%; height:30px; background: rgba(246, 104, 16, 0.956); margin-right:5px; list-style:circle; font-size:20px; float:left; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Accessories
+                   div(class="first-div" style="background:yellow; width:1230px; margin:10px 0px 10px -5px;")
+                        each access in accessory
+                                .card(style='width: 24%; height:300px; margin:1px auto 0px auto; float:left;')
+                                    img.card-img-top(src=access .image alt=access .name)
+                                    .card-body
+                                        h5.card-title="access .name"
+                                        p.card-text="access .description"
+                                        p.card-text="access .friquincy"
+                                        p.card-text="access .power"
+                                        p.card-text Price: $#{"access .price"}
+                                        a.btn.btn-primary(href='#') Go somewhere
+  
+            li(class="first-li" style="width:23%; height:30px; background: rgba(246, 104, 16, 0.956); margin-right:5px; list-style:circle; font-size:20px; float:left; ")
+                a( href ="#" style="color:black; font-weight:600;  text-decoration: none;") Computer
+                   div(class="first-div" style="background:yellow; width:1230px; margin:10px 0px 10px -5px;")
+                        each comput in computer
+                                .card(style='width: 24%; height:300px; margin:1px auto 0px auto; float:left;')
+                                    img.card-img-top(src=comput.image alt=comput.name)
+                                    .card-body
+                                        h5.card-title="comput.name"
+                                        p.card-text="comput.description"
+                                        p.card-text="comput.friquincy"
+                                        p.card-text="comput.power"
+                                        p.card-text Price: $#{"comput.price"}
+                                        a.btn.btn-primary(href='#') Go somewhere
+                    

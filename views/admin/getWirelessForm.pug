@@ -1,0 +1,19 @@
+extends ../layout.pug 
+block content
+    div(class="first-div1" style=" width:800px; height:500px; margin:28px 0px 0px 152px; ")
+                            h1(style="background: rgba(246, 104, 16, 0.956); margin:90px 0px 20px 80px; text-align:center;") Add new wireless device 
+                            form( action="/admin/getWirelessForm" method="post" enctype="multipart/form-data" style="width:80%; margin-left:auto; margin-right:auto;" )
+                                .form-group1
+                                    label(for='name') Name
+                                    input#exampleInputEmail1.form-control(type='text', name="name", placeholder='Enter Name')
+                                    label(for='exampleInputPassword1') Description
+                                    input#exampleInputPassword1.form-control(type='text', name="description" placeholder='Enter Description for item')
+                                    label(for='exampleInputPassword1') Power
+                                    input#exampleInputPassword1.form-control(type='text', name="power" placeholder='Enter Power support for item')
+                                    label(for='exampleInputPassword1') Frequincy
+                                    input#exampleInputPassword1.form-control(type='text', name="frequincy" placeholder='Enter Frequincy support for item')
+                                    label(for='exampleInputPassword1') Price
+                                    input#exampleInputPassword1.form-control(type='text', name="price" placeholder='Enter Price for item')
+                                    label(for='exampleInputPassword1') Image
+                                    input#exampleInputPassword1.form-control(type='text', name="image" placeholder='Enter Image for item')
+                                    button.btn.btn-primary(href="/admin/getWirelessForm" style="width:200px; margin:10px;") Create
